@@ -5,7 +5,7 @@ This repository is a KitSHn recipe repo. KitSHn deploys recipe repos from GitHub
 ## Contract
 
 - `.kitshn.yaml` maps GitHub events to deployment environments.
-- `.github/workflows/kitshn.yml` calls the KitSHn reusable deploy workflow.
+- `.github/workflows/kitshn.yml` calls the KitSHn reusable deploy workflow and grants it required GitHub token permissions.
 - `kitshn.md` documents the recipe contract and the KitSHn source commit that generated it.
 - Optional `compose.yml` defines container services for Docker Compose deployments.
 - Optional `Caddyfile.j2` defines public routing and is rendered on the VPS into a generated `Caddyfile`.
@@ -14,5 +14,5 @@ This repository is a KitSHn recipe repo. KitSHn deploys recipe repos from GitHub
 
 ## Origin
 
-- Generated from: https://github.com/Yarden-zamir/kitshn/blob/c08f11fc308acc7c102dbeec5f77011489b3be69/src/kitshn/repo_init.py
-- KitSHn commit: `c08f11fc308acc7c102dbeec5f77011489b3be69`
+- Generated from: https://github.com/Yarden-zamir/kitshn/blob/bd045cd355524692c475af6b47403a96f9365ecd/src/kitshn/repo_init.py
+- KitSHn commit: `bd045cd355524692c475af6b47403a96f9365ecd`
