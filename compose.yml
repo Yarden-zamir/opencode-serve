@@ -14,6 +14,7 @@ services:
       KITSHN_LOG_DIR: ${KITSHN_LOG_DIR}
     volumes:
       - ${KITSHN_DATA_DIR}:/root/.local/share/opencode
+      - /persistent/Yarden-zamir/opencode-telegram-bot/prod/.config/opencode/tools:/root/.config/opencode/tools
     ports:
       - "127.0.0.1:4096:4096"
     networks:
