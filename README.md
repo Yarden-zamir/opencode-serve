@@ -1,7 +1,6 @@
 # opencode-serve
 
 KitSHn recipe for running `opencode serve` behind Caddy at `https://opencode.yarden-zamir.com`.
-
 ## Runtime
 
 - Image: `ghcr.io/anomalyco/opencode:latest`
