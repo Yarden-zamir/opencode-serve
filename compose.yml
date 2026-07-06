@@ -18,6 +18,7 @@ services:
       - ${KITSHN_DATA_DIR}:/root/.local/share/opencode
       - /persistent/Yarden-zamir/opencode-telegram-bot/prod/.config/opencode/tools:/root/.config/opencode/tools
     networks:
+      - default
       - kitshn-edge
     healthcheck:
       test: ["CMD", "opencode", "--version"]
@@ -31,8 +32,6 @@ services:
     command: ["UNIX-LISTEN:${KITSHN_DEFAULT_SOCKET},fork,unlink-early,mode=666", "TCP:opencode:4096"]
     volumes:
       - ${KITSHN_SOCKET_DIR}:${KITSHN_SOCKET_DIR}
-    networks:
-      - kitshn-edge
     depends_on:
       - opencode
     healthcheck:
