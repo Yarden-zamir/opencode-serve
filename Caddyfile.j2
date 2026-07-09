@@ -1,3 +1,7 @@
-opencode.yarden-zamir.com {
+{% if environment == "prod" -%}
+opencode.yarden-zamir.com
+{%- else -%}
+pr.{{ environment.removeprefix("pr-") }}.opencode.yarden-zamir.com
+{%- endif %} {
     reverse_proxy unix//{{ paths.default_socket }}
 }
