@@ -1,5 +1,7 @@
 # opencode-serve
 
+[![kitshn](https://kitshn.yarden-zamir.com/b/Yarden-zamir/opencode-serve.svg)](https://opencode.yarden-zamir.com)
+
 KitSHn recipe for running `opencode serve` behind Caddy at `https://opencode.yarden-zamir.com`.
 ## Runtime
 
