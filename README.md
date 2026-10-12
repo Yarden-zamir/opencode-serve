@@ -1,6 +1,8 @@
 # opencode-serve
 
-[![kitshn](https://kitshn.yarden-zamir.com/b/Yarden-zamir/opencode-serve.svg)](https://opencode.yarden-zamir.com)
+> **Sunset on 2026-10-12.** This service no longer runs. The KitSHn deployment, the route
+> `opencode.yarden-zamir.com`, its DNS records, its deploy workflow, and its deploy secrets are
+> removed. The text below describes how it ran before.
 
 KitSHn recipe for running `opencode serve` behind Caddy at `https://opencode.yarden-zamir.com`.
 ## Runtime
